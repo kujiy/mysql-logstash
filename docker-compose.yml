@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  logstash:
+    restart: always
+    image: docker.elastic.co/logstash/logstash:6.3.2
+    volumes:
+    - ./config:/config
+    - ./mysql-connector-java-8.0.13-1.el7.jar:/tmp/mysql-connector-java-8.0.13-1.el7.jar
+    command: logstash -f /config/*.conf

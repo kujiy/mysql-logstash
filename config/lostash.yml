@@ -1,0 +1,2 @@
+http.host: "0.0.0.0"
+xpack.monitoring.elasticsearch.url: http://YOUR_ELASTICSERVER_DOMAIN:YOUR_PORT
